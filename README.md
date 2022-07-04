@@ -1,9 +1,5 @@
-# Fabric Example Mod
+# Dinnerbone Mod
 
-## Setup
+This mod turns you upside down like dinnerbone!
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+You can use the [ModMenu Mod](https://github.com/TerraformersMC/ModMenu) to easily toggle the mod on and off!
