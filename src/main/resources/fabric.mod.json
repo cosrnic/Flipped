@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "dinnerbone",
+  "version": "${version}",
+
+  "name": "Dinnerbone Mod",
+  "description": "This mod turns you upside down like dinnerbone!",
+  "authors": [
+    "cosrnic"
+  ],
+  "contact": {
+    "homepage": "https://cosrnic.uk/",
+    "sources": "https://github.com/cosrnic/Dinnerbone-Mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/dinnerbone/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "uk.cosrnic.dinnerbone.Main"
+    ],
+    "modmenu": [
+      "uk.cosrnic.dinnerbone.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
