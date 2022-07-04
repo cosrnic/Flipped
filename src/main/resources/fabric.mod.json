@@ -3,7 +3,7 @@
   "id": "flipped",
   "version": "${version}",
 
-  "name": "Dinnerbone Mod",
+  "name": "Flipped Mod",
   "description": "This mod flips you upside down, similar to Dinnerbone's player model.",
   "authors": [
     "cosrnic"
