@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "dinnerbone",
+  "id": "flipped",
   "version": "${version}",
 
   "name": "Dinnerbone Mod",
-  "description": "This mod turns you upside down like dinnerbone!",
+  "description": "This mod flips you upside down, similar to Dinnerbone's player model.",
   "authors": [
     "cosrnic"
   ],
   "contact": {
     "homepage": "https://cosrnic.uk/",
-    "sources": "https://github.com/cosrnic/Dinnerbone-Mod"
+    "sources": "https://github.com/cosrnic/Flipped"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/dinnerbone/icon.png",
+  "icon": "assets/flipped/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "uk.cosrnic.dinnerbone.Main"
+      "uk.cosrnic.flipped.Main"
     ],
     "modmenu": [
-      "uk.cosrnic.dinnerbone.config.ModMenuIntegration"
+      "uk.cosrnic.flipped.config.ModMenuIntegration"
     ]
   },
   "mixins": [
