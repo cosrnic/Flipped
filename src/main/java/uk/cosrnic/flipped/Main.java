@@ -9,4 +9,5 @@ public class Main implements ModInitializer {
 	public void onInitialize() {
 		FlippedConfig.register();
 	}
+
 }

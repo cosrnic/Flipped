@@ -1,4 +1,5 @@
 {
   "text.autoconfig.flipped.option.flippedToggle": "Toggle Flipped Player Model",
+  "text.autoconfig.flipped.option.allFlippedToggle": "Toggle Flipped Player Model for All Players",
   "text.autoconfig.flipped.title": "Flipped"
 }

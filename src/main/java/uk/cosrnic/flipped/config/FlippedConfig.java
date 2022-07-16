@@ -8,6 +8,7 @@ import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 @Config(name="flipped")
 public class FlippedConfig implements ConfigData {
     public boolean flippedToggle = true;
+    public boolean allFlippedToggle = false;
 
     public static void register() {
         AutoConfig.register(FlippedConfig.class, GsonConfigSerializer::new);

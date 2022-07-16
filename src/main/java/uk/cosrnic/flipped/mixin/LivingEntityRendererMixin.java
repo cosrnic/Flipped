@@ -16,9 +16,21 @@ import uk.cosrnic.flipped.config.FlippedConfig;
 public class LivingEntityRendererMixin {
 	@Inject(method = "setupTransforms", at = @At(value = "TAIL"))
 	private void flipPlayer(LivingEntity entity, MatrixStack matrices, float _animationProgress, float _bodyYaw, float _tickDelta, CallbackInfo _info) {
-		if (entity instanceof PlayerEntity && entity.getName().equals(MinecraftClient.getInstance().player.getName()) && FlippedConfig.get().flippedToggle) {
-			matrices.translate(0.0D, entity.getHeight() + 0.1F, 0.0D);
-			matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(180.0F));
+		if (!(entity instanceof PlayerEntity)) return;
+		if (MinecraftClient.getInstance().player != null) {
+			if (entity.getUuidAsString().equals(MinecraftClient.getInstance().player.getUuidAsString()) && FlippedConfig.get().flippedToggle) {
+				matrices.translate(0.0D, entity.getHeight() + 0.1F, 0.0D);
+				matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(180.0F));
+			}
+			else if (FlippedConfig.get().allFlippedToggle) {
+				if (entity.getUuidAsString().equals(MinecraftClient.getInstance().player.getUuidAsString()) && !FlippedConfig.get().flippedToggle) {
+					matrices.translate(0.0D, entity.getHeight() + 0.1F, 0.0D);
+					matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(180.0F));
+				}
+				matrices.translate(0.0D, entity.getHeight() + 0.1F, 0.0D);
+				matrices.multiply(Vec3f.POSITIVE_Z.getDegreesQuaternion(180.0F));
+			}
 		}
 	}
+
 }
